@@ -4,7 +4,8 @@
   justify-content: center;
   gap: 100px;
   border-bottom: solid 10px rgba(128, 128, 128, 0.2);
-  padding-bottom: 5px;
+  padding: 100px;
+
 }
 
 .DivInfo-Content:last-child {

@@ -5,10 +5,60 @@
 
 .IndexPage-Bg {
   border-bottom: solid 10px rgba(128, 128, 128, 0.2);
+  height: 700px;
+  background-image: url(https://www.gracenote.com/wp-content/uploads/2015/07/Movie-TV-Art-Mosaic-Comp1.jpg);
 }
 
-.IndexPage-Bg {
-  background-image: url(https://storage.googleapis.com/afs-prod/media/ed5f8b8cba114c7b84e25e9420cafb6d/3000.jpeg);
-  filter: blur(2px);
-  height: 700px;
+.IndexPage-Header {
+  padding: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.IndexPage-Header-Menu {
+  padding: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.IndexPage-Content {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.IndexPage-Content h1 {
+  font-size: 3rem;
+  margin: 10px;
+}
+
+.IndexPage-Content h2 {
+  font-size: 1.6rem;
+  margin: 10px;
+}
+
+.IndexPage-Content h3 {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.IndexPage-Content-Input {
+  display: flex;
+  background-color: var(--redFlix);
+  height: 50px;
+}
+
+.IndexPage-Content-Input button {
+  background-color: var(--redFlix);
+  color: white;
+  border: inherit;
+}
+
+.IndexPage-Content * {
+  font-size: 1.6rem;
+  width: 500px;
 }

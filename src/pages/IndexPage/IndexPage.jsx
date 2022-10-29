@@ -8,7 +8,7 @@ const IndexPage = () => {
       <div className="IndexPage-Bg">
         <div className="IndexPage-Header">
           <h1>CloneFlix</h1>
-          <div>
+          <div className="IndexPage-Header-Menu">
             <h2>Idioma</h2>
             <h2>Entrar</h2>
           </div>
@@ -20,7 +20,7 @@ const IndexPage = () => {
             Pronto para assistir? Informe seu email para criar ou reiniciar sua
             assinatura.
           </h3>
-          <div>
+          <div className="IndexPage-Content-Input">
             <input placeholder="email"></input>
             <button>Vamos la!</button>
           </div>
