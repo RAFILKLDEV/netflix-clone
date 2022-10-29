@@ -1,9 +1,10 @@
 import React from "react";
+import "./DivInfo.css"
 
 const DivInfo = (props) => {
   return (
-    <div className="Content">
-      <div>
+    <div className="DivInfo-Content">
+      <div className="DivInfo-Title">
         <h1>{props.title}</h1>
         <h2>{props.subTitle}</h2>
       </div>

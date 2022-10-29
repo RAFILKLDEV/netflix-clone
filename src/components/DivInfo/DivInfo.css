@@ -1,0 +1,16 @@
+.DivInfo-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  border-bottom: solid 10px rgba(128, 128, 128, 0.2);
+  padding-bottom: 5px;
+}
+
+.DivInfo-Content:last-child {
+  border: none;
+}
+
+.DivInfo-Title {
+  width: 600px;
+}

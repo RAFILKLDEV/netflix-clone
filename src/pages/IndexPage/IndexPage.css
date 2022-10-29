@@ -1,0 +1,14 @@
+.IndexPage {
+  background-color: black;
+  color: white;
+}
+
+.IndexPage-Bg {
+  border-bottom: solid 10px rgba(128, 128, 128, 0.2);
+}
+
+.IndexPage-Bg {
+  background-image: url(https://storage.googleapis.com/afs-prod/media/ed5f8b8cba114c7b84e25e9420cafb6d/3000.jpeg);
+  filter: blur(2px);
+  height: 700px;
+}
