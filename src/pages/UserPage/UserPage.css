@@ -1,0 +1,39 @@
+.UserPage {
+  height: 100vh;
+  background-color: #191919;
+  text-align: left;
+  box-shadow: inset 0px 41px 15px -10px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.UserPage-Users {
+  display: flex;
+  gap: 20px;
+  color: rgb(48,48,48);
+}
+
+.UserPage-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80%;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.UserPage-Logo {
+  width: 150px;
+  height: auto;
+  padding: 20px;
+}
+
+.UserPage-Content button {
+  border: rgb(48,48,48) solid 3px;
+  font-size: 1.1em;
+  width: 200px;
+  height: 50px;
+  background-color: inherit;
+  color: rgb(48,48,48);
+  font-weight: 600;
+}

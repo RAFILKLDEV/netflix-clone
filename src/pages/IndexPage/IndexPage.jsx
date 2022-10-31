@@ -1,4 +1,5 @@
 import React from "react";
+import CloneFlixLogo from "../../components/CloneFlixLogo/CloneFlixLogo";
 import DivInfo from "../../components/DivInfo/DivInfo";
 import "./IndexPage.css";
 
@@ -7,7 +8,7 @@ const IndexPage = () => {
     <div className="IndexPage">
       <div className="IndexPage-Bg">
         <div className="IndexPage-Header">
-          <h1>CloneFlix</h1>
+          <CloneFlixLogo className="IndexPage-Logo"/>
           <div className="IndexPage-Header-Menu">
             <h2>Idioma</h2>
             <h2>Entrar</h2>

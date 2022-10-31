@@ -1,0 +1,11 @@
+.User {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.User img {
+  height: 200px;
+  width: 200px;
+}
