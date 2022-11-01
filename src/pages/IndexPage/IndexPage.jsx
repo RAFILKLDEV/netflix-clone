@@ -8,7 +8,7 @@ const IndexPage = () => {
     <div className="IndexPage">
       <div className="IndexPage-Bg">
         <div className="IndexPage-Header">
-          <CloneFlixLogo className="IndexPage-Logo"/>
+          <CloneFlixLogo className="IndexPage-Logo" />
           <div className="IndexPage-Header-Menu">
             <h2>Idioma</h2>
             <h2>Entrar</h2>

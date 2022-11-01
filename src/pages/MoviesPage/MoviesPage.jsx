@@ -23,13 +23,11 @@ const MoviesPage = () => {
       </div>
       <div className="MoviesPage-Movie">
         <div className="MoviesPage-Content">
-          <div className="MoviesPage-Imagem">
-            {/* <img
-              src="https://conteudo.imguol.com.br/c/entretenimento/d6/2017/07/18/transformers-1500405719738_v2_4x3.jpg"
-              alt=""
-            /> */}
-          </div>
-          <div className="MoviesPage-MovieContent">
+          <img
+            src="https://conteudo.imguol.com.br/c/entretenimento/d6/2017/07/18/transformers-1500405719738_v2_4x3.jpg"
+            alt=""
+          />
+          <div className="MoviesPage-MovieContent2">
             <h1>Title</h1>
             <div>
               Lorem Ipsum is simply dummy text of the printing and typesetting

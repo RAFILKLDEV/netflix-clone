@@ -7,10 +7,10 @@ import UserPage from "./pages/UserPage/UserPage";
 function App() {
   return (
     <div className="App">
-      <IndexPage />
+      {/* <IndexPage />
       <LoginPage />
-      <UserPage />
-      <MoviesPage/>
+      <UserPage /> */}
+      <MoviesPage />
     </div>
   );
 }
