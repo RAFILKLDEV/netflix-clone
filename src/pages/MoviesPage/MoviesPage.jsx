@@ -21,15 +21,15 @@ const MoviesPage = () => {
           <div className="MoviesPage-UserIcon">User</div>
         </div>
       </div>
-      <div className="MoviesPage-Movie">
-        <div className="MoviesPage-Content">
-          <img
-            src="https://conteudo.imguol.com.br/c/entretenimento/d6/2017/07/18/transformers-1500405719738_v2_4x3.jpg"
-            alt=""
-          />
-          <div className="MoviesPage-MovieContent2">
+      <div className="MoviesPage-MovieBox">
+        <img
+          src="https://conteudo.imguol.com.br/c/entretenimento/d6/2017/07/18/transformers-1500405719738_v2_4x3.jpg"
+          alt=""
+        />
+        <div className="MoviesPage-Movie">
+          <div className="MoviesPage-MovieContent">
             <h1>Title</h1>
-            <div>
+            <div className="MoviesPage-MovieContent-Desc">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
