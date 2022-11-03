@@ -1,7 +1,10 @@
 .MoviesPage {
-  min-height: 100vh;
   color: rgb(226, 226, 226);
-  background-color: black;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(0, 0, 0)
+  );
 }
 
 .MoviesPage-Header {
@@ -41,7 +44,7 @@
   position: relative;
 }
 
-.MoviesPage-MovieBox img {
+#img {
   height: 1080px;
   width: 100%;
 }
@@ -52,7 +55,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: inset 0px -89px 21px -40px rgba(22, 22, 22, 0.75);
+  box-shadow: inset 0px -89px 21px -40px rgba(22, 22, 22, 1);
   width: 100%;
   height: 100%;
 }
@@ -77,4 +80,24 @@
   font-size: 1.3em;
   width: 200px;
   height: 50px;
+}
+
+.MoviesPage-Movies {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 50px;
+  width: 94%;
+}
+
+.MoviesPage-Movies-Bar {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  
 }
