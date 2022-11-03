@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import CloneFlixLogo from "../../components/CloneFlixLogo/CloneFlixLogo";
 import MovieCard from "../../components/MovieCard/MovieCard";
+import Wheel from "../../components/Wheel/Wheel";
+import { batman, pokemon, shrek } from "../../constants";
 import "./MoviesPage.css";
 
 const MoviesPage = () => {
@@ -25,9 +27,9 @@ const MoviesPage = () => {
   useEffect(() => {
     axios
       .request(options)
-      .then(function (response) {
+      .then(async function (response) {
         console.log(response.data.result);
-        setMovies(response.data.result);
+        await setMovies(response.data.result);
       })
       .catch(function (error) {
         console.error(error);
@@ -53,46 +55,21 @@ const MoviesPage = () => {
         </div>
       </div>
       <div className="MoviesPage-MovieBox">
-        <img
-          src={movies[1].backdropURLs.original}
-          alt=""
-          id="img"
-        />
+        <img src={batman.result[1]?.backdropURLs.original} alt="" id="img" />
         <div className="MoviesPage-Movie">
           <div className="MoviesPage-MovieContent">
-            <h1>{movies[1].title}</h1>
+            <h1>{batman.result[1]?.title}</h1>
             <div className="MoviesPage-MovieContent-Desc">
-              {movies[1].overview}
+              {batman.result[1]?.overview}
             </div>
             <div className="MoviesPage-Buttons">
               <button>Play</button>
               <button>More Info</button>
             </div>
           </div>
-          <div className="MoviesPage-Movies">
-            <h1>Because You Watched Batman</h1>
-            <div className="MoviesPage-Movies-Bar">
-              {movies.map((e, i) => (
-                <MovieCard img={e.backdropURLs[300]} title={e.title} />
-              ))}
-            </div>
-          </div>
-          <div className="MoviesPage-Movies">
-            <h1>Because You Watched Batman</h1>
-            <div className="MoviesPage-Movies-Bar">
-              {movies.map((e, i) => (
-                <MovieCard img={e.backdropURLs[300]} title={e.title} />
-              ))}
-            </div>
-          </div>
-          <div className="MoviesPage-Movies">
-            <h1>Because You Watched Batman</h1>
-            <div className="MoviesPage-Movies-Bar">
-              {movies.map((e, i) => (
-                <MovieCard img={e.backdropURLs[300]} title={e.title} />
-              ))}
-            </div>
-          </div>
+          <Wheel movies={batman.result} />
+          <Wheel movies={pokemon.result} />
+          <Wheel movies={shrek.result} />
         </div>
       </div>
     </div>
