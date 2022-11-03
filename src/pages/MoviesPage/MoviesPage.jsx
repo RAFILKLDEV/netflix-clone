@@ -31,7 +31,7 @@ const MoviesPage = () => {
         console.log(response.data.result);
         await setMovies(response.data.result);
       })
-      .catch(function (error) {
+      .catch(async function (error) {
         console.error(error);
       });
   }, []);

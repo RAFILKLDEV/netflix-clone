@@ -95,7 +95,7 @@
   gap: 10px;
   width: 100%;
 
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
   scroll-behavior: smooth;
   white-space: nowrap;
