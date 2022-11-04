@@ -24,9 +24,33 @@
 .IndexPage-Header-Menu {
   padding: 20px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   width: 200px;
+}
+
+.IndexPage-Header-Menu button {
+  background-color: var(--redFlix);
+  border: none;
+  border-radius: 3px;
+  height: auto;
+  text-align: center;
+  padding: 12px 20px;
+}
+
+.IndexPage-Header-Menu select {
+  background-color: inherit;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.IndexPage-Header-Menu option {
+  color: white;
+  text-align: start;
+  background-color: gray;
 }
 
 .IndexPage-Content {
@@ -61,6 +85,10 @@
   background-color: var(--redFlix);
   color: white;
   border: inherit;
+}
+
+.IndexPage-Content-Input a:visited {
+  text-decoration: none;
 }
 
 .IndexPage-Content * {

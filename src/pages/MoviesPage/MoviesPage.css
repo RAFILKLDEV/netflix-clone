@@ -19,6 +19,10 @@
   width: auto;
 }
 
+.MoviesPage-UserIcon img {
+  height: 25px;
+}
+
 .MoviesPage-Menu {
   display: flex;
   align-items: center;
@@ -99,5 +103,10 @@
   overflow-y: hidden;
   scroll-behavior: smooth;
   white-space: nowrap;
-  
+}
+
+@media (max-width: 1500px) {
+  .MoviesPage-Menu {
+    padding-right: 0px;
+  }
 }

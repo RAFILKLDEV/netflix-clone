@@ -1,21 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./LoginPage.css";
 
 const LoginPage = () => {
   return (
     <div className="LoginPage">
-      <div className="test">
+      <div className="LoginPage-Content">
         <img
           src="https://www.gracenote.com/wp-content/uploads/2015/07/Movie-TV-Art-Mosaic-Comp1.jpg"
           alt=""
         />
-      </div>
-      <div className="LoginPage-Content">
         <div className="LoginPage-LoginBox">
           <h1>Entrar</h1>
           <input type="text" placeholder="Email ou Número de telefone" />
           <input type="password" placeholder="Senha" />
-          <button>Entrar</button>
+          <button>
+            <Link to={"/user"}>Entrar</Link>
+          </button>
           <div className="LoginPage-LoginBox-Help">
             <div>
               <input type="checkbox" name="checkbox" id="" />

@@ -4,9 +4,17 @@
   justify-content: center;
   height: 100vh;
   font-size: 1em;
+  position: relative;
+}
+
+.LoginPage-Content img{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 .LoginPage-LoginBox {
+  position: absolute;
   height: 550px;
   width: 350px;
   background-color: rgba(0, 0, 0, 0.85);

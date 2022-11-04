@@ -1,9 +1,9 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import CloneFlixLogo from "../../components/CloneFlixLogo/CloneFlixLogo";
-import MovieCard from "../../components/MovieCard/MovieCard";
 import Wheel from "../../components/Wheel/Wheel";
 import { batman, pokemon, shrek } from "../../constants";
+import UserContext from "../../contexts/UserContext";
 import "./MoviesPage.css";
 
 const MoviesPage = () => {
@@ -22,6 +22,7 @@ const MoviesPage = () => {
     },
   };
 
+  const { userState } = useContext(UserContext);
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -49,9 +50,11 @@ const MoviesPage = () => {
         </div>
         <div className="MoviesPage-Bar">
           <div className="MoviesPage-Search">Pesquisa</div>
-          <div className="MoviesPage-User">User</div>
+          <div className="MoviesPage-User">{userState.user}</div>
           <div className="MoviesPage-Notification">Notificação</div>
-          <div className="MoviesPage-UserIcon">User</div>
+          <div className="MoviesPage-UserIcon">
+            <img src={userState.img} alt={userState.user} />
+          </div>
         </div>
       </div>
       <div className="MoviesPage-MovieBox">

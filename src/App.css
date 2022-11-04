@@ -2,3 +2,26 @@
   --redFlix: rgb(229, 9, 20);
   text-align: center;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+} /* Globally */
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+a:focus {
+  text-decoration: none;
+  color: yellow;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}

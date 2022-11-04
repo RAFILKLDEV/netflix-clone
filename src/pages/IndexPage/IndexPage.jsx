@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CloneFlixLogo from "../../components/CloneFlixLogo/CloneFlixLogo";
 import DivInfo from "../../components/DivInfo/DivInfo";
 import "./IndexPage.css";
@@ -10,8 +11,13 @@ const IndexPage = () => {
         <div className="IndexPage-Header">
           <CloneFlixLogo className="IndexPage-Logo" />
           <div className="IndexPage-Header-Menu">
-            <h2>Idioma</h2>
-            <h2>Entrar</h2>
+            <select>
+              <option>English</option>
+              <option>Português</option>
+            </select>
+            <button>
+              <Link to={"/login"}>Entrar</Link>
+            </button>
           </div>
         </div>
         <div className="IndexPage-Content">
@@ -23,7 +29,9 @@ const IndexPage = () => {
           </h3>
           <div className="IndexPage-Content-Input">
             <input placeholder="email"></input>
-            <button>Vamos la!</button>
+            <button>
+              <Link to={"/login"}>Vamos la!</Link>
+            </button>
           </div>
         </div>
       </div>
