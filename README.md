@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# CloneFlix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🛠️ Resumo do Projeto
 
-## Available Scripts
+- Esse projeto foi criado seguindo o design do <a href="https://www.netflix.com">Netflix</a>.
+- O Projeto foi dividido em paginas.
+- - IndexPage - Pagina Inicial
+- - LoginPage - Pagina onde poderá ser feito o login de usuario.
+- - UserPage - Pagina de seleção de usuario.
+- - MoviePage - Pagina onde é teoricamente seria possivel assistir os videos do catalogo. Carrossel de videos.
 
-In the project directory, you can run:
+### 📷 Imagens
 
-### `npm start`
+- <img src="https://cdn.discordapp.com/attachments/1024746757197934616/1038183321861099592/index.png" width="960" height="542" />
+- <img src="https://cdn.discordapp.com/attachments/1024746757197934616/1038183322280534058/login.png" width="960" height="542" />
+- <img src="https://cdn.discordapp.com/attachments/1024746757197934616/1038183321492013116/User.png" width="960" height="542" />
+- <img src="https://cdn.discordapp.com/attachments/1024746757197934616/1038183321198403615/Movie.png" width="960" height="542" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✔️ Tecnologias utilizadas
 
-### `npm test`
+- Html
+- Css
+- Javascript
+- React ( Context API e Router )
+- LocalStorage
+- Json File
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔨 Funcionalidades do projeto
 
-### `npm run build`
+- `Pages`: Varias Paginas ligadas através do React Router.
+- `Context API`: Informações de usuário são utilizadas em mais de uma pagina através do React Context Api.
+- `LocalStorage`: Informações de usuário são persistentes, mesmo que feche o navegador.
+- `Design`: Design baseado no Netflix
+- `Carousell`: Filmes alinhados em formato de Carrossel utilizando a roda do Mouse.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📁 Acesso ao projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- <a href="https://cloneflix-rafilkldev.netlify.app/">CloneFlix</a>
