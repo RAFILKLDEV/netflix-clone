@@ -1,11 +1,11 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./App.css";
 import UserContext from "./contexts/UserContext";
 import IndexPage from "./pages/IndexPage/IndexPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import MoviesPage from "./pages/MoviesPage/MoviesPage";
 import UserPage from "./pages/UserPage/UserPage";
+import "./App.css";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,7 +28,7 @@ function App() {
   ]);
 
   const [userState, setUserState] = useState({
-    user: "kek",
+    user: "",
     img: "",
     active: false,
   });

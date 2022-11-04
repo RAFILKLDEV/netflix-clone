@@ -3,17 +3,12 @@ import MovieCard from "../MovieCard/MovieCard";
 
 const Wheel = (props) => {
   const position = useRef();
-
-  console.log(position, "posição");
   const random = Math.floor(Math.random() * (1 - 5) + 5);
 
   const wheelHorizontal = (e) => {
-    const race = 300;
-    const mouseWheel = document.querySelectorAll(".MoviesPage-Movies-Bar");
-
+    const race = 620;
     if (e.deltaY > 0) {
       // Scroll right
-      mouseWheel.scrollLeft += race;
       position.current.scrollLeft += race;
     }
     // Scroll left
@@ -21,9 +16,9 @@ const Wheel = (props) => {
   };
 
   return (
-    <div onWheel={wheelHorizontal} ref={position} className="MoviesPage-Movies">
+    <div onWheel={wheelHorizontal} className="MoviesPage-Movies">
       <h1>Because You Watched {props.movies[random].title}</h1>
-      <div id="Bar" ref={position} className="MoviesPage-Movies-Bar">
+      <div ref={position} className="MoviesPage-Movies-Bar">
         {props.movies.map((e, i) => (
           <MovieCard key={i} img={e.backdropURLs[300]} title={e.title} />
         ))}

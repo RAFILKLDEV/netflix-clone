@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.LoginPage-Content img{
+.LoginPage-Content img {
   height: 100%;
   width: 100%;
   object-fit: fill;
@@ -17,7 +17,7 @@
   position: absolute;
   height: 550px;
   width: 350px;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -46,7 +46,9 @@
   background-color: var(--redFlix);
   font-size: 1.1em;
   color: white;
+  border: inherit;
   border-radius: 7px;
+  width: 100%;
 }
 
 .LoginPage-LoginBox-Help {

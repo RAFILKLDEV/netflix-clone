@@ -1,11 +1,15 @@
 .MovieCard {
   width: 300px;
   height: 170px;
+  padding: 20px;
 }
 
 .MovieCard img {
   width: 300px;
   height: 170px;
   object-fit: contain;
-  border: 1px solid black;
+}
+
+.MovieCard img:hover {
+  transform: scale(1.2);
 }

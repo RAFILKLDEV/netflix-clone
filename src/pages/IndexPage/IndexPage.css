@@ -85,10 +85,9 @@
   background-color: var(--redFlix);
   color: white;
   border: inherit;
-}
-
-.IndexPage-Content-Input a:visited {
-  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  height: 100%;
 }
 
 .IndexPage-Content * {

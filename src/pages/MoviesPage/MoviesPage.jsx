@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import CloneFlixLogo from "../../components/CloneFlixLogo/CloneFlixLogo";
 import Wheel from "../../components/Wheel/Wheel";
@@ -7,38 +6,18 @@ import UserContext from "../../contexts/UserContext";
 import "./MoviesPage.css";
 
 const MoviesPage = () => {
-  const options = {
-    method: "GET",
-    url: "https://streaming-availability.p.rapidapi.com/v2/search/title",
-    params: {
-      title: "batman",
-      country: "us",
-      type: "movie",
-      output_language: "en",
-    },
-    headers: {
-      "X-RapidAPI-Key": "32f916b26emsh02471d2aab51a5dp15ed1ajsnceac7eb3250c",
-      "X-RapidAPI-Host": "streaming-availability.p.rapidapi.com",
-    },
-  };
-
-  const { userState } = useContext(UserContext);
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    axios
-      .request(options)
-      .then(async function (response) {
-        console.log(response.data.result);
-        await setMovies(response.data.result);
-      })
-      .catch(async function (error) {
-        console.error(error);
-      });
-  }, []);
+  const { userState, setUserState } = useContext(UserContext);
+  
+  setUserState(() => {
+    const values = userState;
+    values.user = localStorage.getItem("user");
+    values.img = localStorage.getItem("img");
+    return values;
+  });
 
   return (
     <div className="MoviesPage">
+      {}
       <div className="MoviesPage-Header">
         <div className="MoviesPage-Menu">
           <CloneFlixLogo className="MoviesPage-Logo" />

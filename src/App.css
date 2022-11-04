@@ -3,6 +3,29 @@
   text-align: center;
 }
 
+a button {
+  color: white;
+  text-decoration: none;
+} /* Globally */
+
+a button:visited {
+  text-decoration: none;
+  color: white;
+}
+a button:hover {
+  text-decoration: none;
+  color: black;
+}
+a button:focus {
+  text-decoration: none;
+  color: yellow;
+}
+a button:hover,
+a button:active {
+  text-decoration: none;
+  color: black;
+}
+
 a {
   color: white;
   text-decoration: none;

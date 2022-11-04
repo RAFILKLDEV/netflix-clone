@@ -15,9 +15,9 @@ const IndexPage = () => {
               <option>English</option>
               <option>Português</option>
             </select>
-            <button>
-              <Link to={"/login"}>Entrar</Link>
-            </button>
+            <Link to={"/login"}>
+              <button> Entrar </button>
+            </Link>
           </div>
         </div>
         <div className="IndexPage-Content">
@@ -29,9 +29,9 @@ const IndexPage = () => {
           </h3>
           <div className="IndexPage-Content-Input">
             <input placeholder="email"></input>
-            <button>
-              <Link to={"/login"}>Vamos la!</Link>
-            </button>
+            <Link to={"/login"}>
+              <button>Vamos la!</button>
+            </Link>
           </div>
         </div>
       </div>

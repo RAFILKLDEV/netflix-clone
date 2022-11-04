@@ -14,9 +14,10 @@ const LoginPage = () => {
           <h1>Entrar</h1>
           <input type="text" placeholder="Email ou Número de telefone" />
           <input type="password" placeholder="Senha" />
-          <button>
-            <Link to={"/user"}>Entrar</Link>
-          </button>
+          <Link to={"/user"}>
+            <button>Entrar</button>
+          </Link>
+
           <div className="LoginPage-LoginBox-Help">
             <div>
               <input type="checkbox" name="checkbox" id="" />
